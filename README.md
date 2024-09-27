@@ -93,4 +93,4 @@
 - [Composer Documentation](https://getcomposer.org/doc/)
 
 ## Ссылки на пакеты
-- [Packagist пакет Minesweeper](https://packagist.org/packages/shindasayonara/minesweeper#dev-main1)
+- [Packagist пакет Minesweeper](https://packagist.org/packages/morsel/minesweeper)
