@@ -3,7 +3,7 @@
         'name' => 'morsel/minesweeper',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => 'a741b2d38788c77a01286f6765828bdfb588abfb',
+        'reference' => 'a93b8fcf5c9808707e199715dd4112e41f178569',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'morsel/minesweeper' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => 'a741b2d38788c77a01286f6765828bdfb588abfb',
+            'reference' => 'a93b8fcf5c9808707e199715dd4112e41f178569',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

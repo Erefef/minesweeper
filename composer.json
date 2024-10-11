@@ -9,6 +9,7 @@
         },
         "files": [
             "src/Controller.php",
+            "src/Game.php",
             "src/View.php"
         ]
     },
