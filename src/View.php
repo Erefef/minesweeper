@@ -2,11 +2,13 @@
 
 namespace Morsel\Minesweeper\View;
 
-function showStartScreen() {
+function showStartScreen()
+{
     \cli\line("Welcome to Minesweeper!");
 }
 
-function showBoard($board, $revealed) {
+function showBoard($board, $revealed)
+{
     $height = count($board);
     $width = count($board[0]);
 
@@ -22,5 +24,14 @@ function showBoard($board, $revealed) {
             $row .= " ";
         }
         \cli\line($row);
+    }
+}
+
+function showGamesList($games)
+{
+    \cli\line("List of saved games:");
+    foreach ($games as $game) {
+        $status = $game['gameOver'] ? 'Finished' : 'In Progress';
+        \cli\line("ID: {$game['id']} | Date: {$game['date']} | Player: {$game['player_name']} | Size: {$game['width']}x{$game['height']} | Mines: {$game['mines']} | Status: $status");
     }
 }

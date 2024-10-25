@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PHP Command Line Tools
  *
@@ -15,8 +16,8 @@ namespace cli;
 /**
  * The `Tree` class is used to display data in a tree-like format.
  */
-class Tree {
-
+class Tree
+{
     protected $_renderer;
     protected $_data = array();
 
@@ -28,7 +29,8 @@ class Tree {
      * @see   tree\Ascii
      * @see   tree\Markdown
      */
-    public function setRenderer(tree\Renderer $renderer) {
+    public function setRenderer(tree\Renderer $renderer)
+    {
         $this->_renderer = $renderer;
     }
 
@@ -65,5 +67,4 @@ class Tree {
     {
         echo $this->render();
     }
-
 }

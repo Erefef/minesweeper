@@ -1,4 +1,5 @@
 <?php
+
 /**
  * PHP Command Line Tools
  *
@@ -15,12 +16,11 @@ namespace cli\tree;
 /**
  * Tree renderers are used to change how a tree is displayed.
  */
-abstract class Renderer {
-
+abstract class Renderer
+{
     /**
      * @param array $tree
      * @return string|null
      */
     abstract public function render(array $tree);
-
 }

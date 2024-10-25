@@ -92,12 +92,12 @@ class Test_Arguments extends TestCase
             'options' => $this->options
         );
 
-	    set_error_handler(
-	      static function ( $errno, $errstr ) {
-		      throw new \Exception( $errstr, $errno );
-	      },
-	      E_ALL
-	    );
+        set_error_handler(
+            static function ($errno, $errstr) {
+                throw new \Exception($errstr, $errno);
+            },
+            E_ALL
+        );
     }
 
     /**
@@ -109,7 +109,7 @@ class Test_Arguments extends TestCase
         $this->options = null;
         $this->settings = null;
         self::clearArgv();
-	    restore_error_handler();
+        restore_error_handler();
     }
 
     /**
@@ -287,7 +287,8 @@ class Test_Arguments extends TestCase
      * @param  array $expectedValues expected values after parsing
      * @dataProvider settingsWithNoOptionsWithDefault
      */
-    public function testParseWithNoOptionsWithDefault($cliParams, $expectedValues) {
+    public function testParseWithNoOptionsWithDefault($cliParams, $expectedValues)
+    {
         $this->_testParse($cliParams, $expectedValues);
     }
 }
