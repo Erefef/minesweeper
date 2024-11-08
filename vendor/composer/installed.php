@@ -1,21 +1,30 @@
-<?php
-
-return array(
+<?php return array(
     'root' => array(
-        'name' => 'shindasayonara/minesweeper',
+        'name' => 'morsel/minesweeper',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '268936bb257c619a27835dc70a9f68e0decdba34',
+        'reference' => '92e6aab501468c931be33b235f47cc09e2d5c9d6',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
         'dev' => true,
     ),
     'versions' => array(
-        'shindasayonara/minesweeper' => array(
+        'gabordemooij/redbean' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '268936bb257c619a27835dc70a9f68e0decdba34',
+            'reference' => '1bb7b5b93031d1a458a503ee91b595c8f7a8c83d',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../gabordemooij/redbean',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
+        'morsel/minesweeper' => array(
+            'pretty_version' => 'dev-master',
+            'version' => 'dev-master',
+            'reference' => '92e6aab501468c931be33b235f47cc09e2d5c9d6',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
