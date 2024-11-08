@@ -22,15 +22,6 @@ if (in_array('--replay', $argv)) {
     exit;
 }
 
-if (in_array('--list-moves', $argv)) {
-    $gameId = (int)\cli\prompt("Enter game ID to list moves:");
-    $moves = $db->listMoves($gameId);
-    foreach ($moves as $move) {
-        \cli\line("Move #{$move['move_number']}: ({$move['x']}, {$move['y']}) - {$move['result']}");
-    }
-    exit;
-}
-
 $width = $argv[1] ?? 10;
 $height = $argv[2] ?? 10;
 $mines = $argv[3] ?? 10;
